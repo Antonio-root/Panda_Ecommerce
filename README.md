@@ -11,71 +11,71 @@ Un proyecto para gestionar un catálogo de productos utilizando Spring Boot, Jav
 ## Estructura de Archivos
 ecommerce-app/
 
-src/
+   src/
 
-main/
+      main/
 
-java/
+         java/
 
-com/
+            com/
 
-tienda/
+               tienda/
 
-EcommerceApplication.java
+                  EcommerceApplication.java
 
-controller/
+                  controller/
 
-ProductController.java
+                     ProductController.java
+      
+                     CartController.java
 
-CartController.java
+                     UserController.java
 
-UserController.java
+                        model/
 
-model/
+                           Product.java
 
-Product.java
+                           Cart.java
 
-Cart.java
+                           User.java
 
-User.java
+                     repository/
 
-repository/
+                           ProductRepository.java
 
-ProductRepository.java
+                           CartRepository.java
 
-CartRepository.java
+                           UserRepository.java
 
-UserRepository.java
+                  service/
 
-service/
+                        ProductService.java
+                        
+                        CartService.java
+                        
+                        UserService.java
 
-ProductService.java
+               resources/
 
-CartService.java
+                     static/
 
-UserService.java
+                        css/
 
-resources/
+                        images/
+                        
+                        js/
 
-static/
+                        templates/
 
-css/
+                                          index.html
+                                          
+                                          product-list.html
+                                          
+                                          product-details.html
+                                          
+                                          application.properties
 
-images/
-
-js/
-
-templates/
-
-index.html
-
-product-list.html
-
-product-details.html
-
-application.properties
-
-pom.xml(o build.gradle)
+         pom.xml(o build.gradle)
 
 
 
