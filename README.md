@@ -9,9 +9,9 @@ Un proyecto para gestionar un catálogo de productos utilizando Spring Boot, Jav
 - MySQL 8.0
 
 ## Estructura de Archivos
-   ecommerce-app/
+ecommerce-app/
 │
-├── src/
+├── src/            
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
