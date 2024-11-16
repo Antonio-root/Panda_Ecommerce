@@ -10,40 +10,75 @@ Un proyecto para gestionar un catálogo de productos utilizando Spring Boot, Jav
 
 ## Estructura de Archivos
 ecommerce-app/
-│
-├── src/            
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── tienda/
-│   │   │           ├── EcommerceApplication.java
-│   │   │           ├── controller/
-│   │   │           │   ├── ProductController.java
-│   │   │           │   ├── CartController.java
-│   │   │           │   └── UserController.java
-│   │   │           ├── model/
-│   │   │           │   ├── Product.java
-│   │   │           │   ├── Cart.java
-│   │   │           │   └── User.java
-│   │   │           ├── repository/
-│   │   │           │   ├── ProductRepository.java
-│   │   │           │   ├── CartRepository.java
-│   │   │           │   └── UserRepository.java
-│   │   │           └── service/
-│   │   │               ├── ProductService.java
-│   │   │               ├── CartService.java
-│   │   │               └── UserService.java
-│   │   └── resources/
-│   │       ├── static/
-│   │       │   ├── css/
-│   │       │   ├── images/
-│   │       │   └── js/
-│   │       ├── templates/
-│   │       │   ├── index.html
-│   │       │   ├── product-list.html
-│   │       │   └── product-details.html
-│   │       └── application.properties
-└── pom.xml (o build.gradle)
+
+src/
+
+main/
+
+java/
+
+com/
+
+tienda/
+
+EcommerceApplication.java
+
+controller/
+
+ProductController.java
+
+CartController.java
+
+UserController.java
+
+model/
+
+Product.java
+
+Cart.java
+
+User.java
+
+repository/
+
+ProductRepository.java
+
+CartRepository.java
+
+UserRepository.java
+
+service/
+
+ProductService.java
+
+CartService.java
+
+UserService.java
+
+resources/
+
+static/
+
+css/
+
+images/
+
+js/
+
+templates/
+
+index.html
+
+product-list.html
+
+product-details.html
+
+application.properties
+
+pom.xml(o build.gradle)
+
+
+
 
 ## Instalación
 1. Clona el repositorio:
