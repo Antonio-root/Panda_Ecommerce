@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Lista de Productos</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Product List</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
 </head>
 <body>
-    <header>
-        <h1>Productos</h1>
-        <nav>
-            <a href="/">Inicio</a>
-            <a href="/cart">Carrito</a>
-        </nav>
-    </header>
-
-    <div class="product-list">
-        <div th:each="product : ${products}">
-            <div class="product">
-                <img th:src="@{${product.imageUrl}}" alt="Imagen del producto">
-                <h3 th:text="${product.name}"></h3>
-                <p th:text="${product.description}"></p>
-                <p th:text="${product.price} + '€'"></p>
-                <a th:href="@{/products/{id}(id=${product.id})}">Ver más</a>
-            </div>
-        </div>
-    </div>
+    <h1>Product List</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="product : ${products}">
+            <td th:text="${product.name}">Product Name</td>
+            <td th:text="${product.description}">Product Description</td>
+            <td th:text="${product.price}">0.00</td>
+            <td>
+                <a th:href="@{/products/edit/{id}(id=${product.id})}">Edit</a> |
+                <a th:href="@{/products/delete/{id}(id=${product.id})}">Delete</a>
+            </td>
+        </tr>
+    </table>
+    <a th:href="@{/products/new}">Add New Product</a>
 </body>
 </html>
